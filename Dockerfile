@@ -1,4 +1,5 @@
 FROM ubuntu:18.04
+LABEL maintainer="Rafael Ingaramo (rafael.ingaramo@hotmail.com)" 
 RUN apt update && apt install -y \
   git \
   libmicrohttpd-dev \
