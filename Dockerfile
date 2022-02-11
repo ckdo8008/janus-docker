@@ -21,7 +21,7 @@ RUN apt update && apt install -y \
   nginx \
   wget
 
-RUN git clone https://gitlab.freedesktop.org/libnice/libnice
+RUN git clone https://gitlab.freedesktop.org/libnice/libnice -b 0.1.17
 WORKDIR /libnice
 RUN sh ./autogen.sh
 RUN sh ./configure --prefix=/usr
